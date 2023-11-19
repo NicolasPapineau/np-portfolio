@@ -1,0 +1,12 @@
+body {
+  background: url(/public/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 200px;
+  padding: 0;
+  font-family: 'Open Sans','Arial', sans-serif;
+  background-attachment: fixed;
+  
+}
+
