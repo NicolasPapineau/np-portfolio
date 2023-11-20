@@ -15,11 +15,11 @@ const Projects = () => {
                     <img src={ecommerce} alt="ecommerce" />
                 </Ex>
                 <Ex>
-                    E-Commerce Project
+                    Fruit Emporium
                     <img src={fruit} alt="fruit empurium" />
                 </Ex>
                 <Ex>
-                    E-Commerce Project
+                    Rony's Pizzeria
                     <img src={pizza} alt="Rony's pizzeria" />
                 </Ex>
 
