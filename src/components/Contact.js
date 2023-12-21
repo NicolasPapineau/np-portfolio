@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 const Contact = () => {
@@ -11,9 +13,9 @@ const Contact = () => {
         window.location.href = `mailto:${emailAddress}`;
     };
 
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
-    };
+    // const handleFormSubmit = (event) => {
+    //     event.preventDefault();
+    // };
 
     return (
         <ProjectContainer id='contact'>
@@ -27,13 +29,13 @@ const Contact = () => {
 
             <SocialLinks>
                 <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
-                LinkedIn
+                <LinkedInIcon />
                 </a>
                 <a href={githubURL} target="_blank" rel="noopener noreferrer">
-                GitHub
+                <GitHubIcon />
                 </a>
             </SocialLinks>
-            <p>Or submit you information here:</p>
+            {/* <p>Or submit you information here:</p>
 
             <ContactForm onSubmit={handleFormSubmit}>
                 <label htmlFor="name">Name: </label>
@@ -46,13 +48,13 @@ const Contact = () => {
                 <textarea id="message" name="message" rows="4" required></textarea>
 
                 <button type="submit">Submit</button>
-            </ContactForm>
+            </ContactForm> */}
         </ProjectContainer>
     );
 };
 
 const ProjectContainer = styled.div`
-    padding: 0px 20px;
+    padding: 20px 20px;
     margin-top: 50px;
     color: white;
     display: flex;
@@ -63,7 +65,7 @@ const ProjectContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(50, 50, 50, 0.7);
-    margin-bottom: 200px;
+    margin-bottom: 400px;
     h3 {
         font-size: 1.5em;
         font-style: italic;
@@ -88,6 +90,7 @@ const SocialLinks = styled.div`
 
     a {
         margin-right: 10px;
+        padding-bottom: 50px;
         color: white;
         text-decoration: none;
 
@@ -97,25 +100,25 @@ const SocialLinks = styled.div`
     }
 `;
 
-const ContactForm = styled.form`
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    font-family: inherit;
-    input{
-        margin:10px;
-    }
-    textarea{
-        margin:10px;
-    }
-    button{
-        width: 200px;
-        margin-bottom: 50px;
-        margin-left: auto;
-    }
+// const ContactForm = styled.form`
+//     margin-top: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     width: 50%;
+//     font-family: inherit;
+//     input{
+//         margin:10px;
+//     }
+//     textarea{
+//         margin:10px;
+//     }
+//     button{
+//         width: 200px;
+//         margin-bottom: 50px;
+//         margin-left: auto;
+//     }
 
-`;
+// `;
 
 
 

@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <StyledNavbar>
       <div className="navbar-container">
-        <div className="logo">Dev.NicPap</div>
+        <div className="logo">n.papineau</div>
         <ul className="nav-links">
           <li>
             <button onClick={() => scrollToSection('home')}>Home</button>

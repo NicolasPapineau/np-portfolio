@@ -15,13 +15,14 @@ const About = () => {
                 
                 <Description>
                     <h3>About me:</h3>
-                    <p>I am a young full-stack developer eager to hone my skills at a dynamic web development company ! Before I chose this career, I used to be a civil engineering student at Concordia University.
-                        After years of effort, I decided that engineering wasn’t meant for me and enrolled in the Concordia Continuing Education Bootcamp for full-stack development!
+                    <p>I am a young full-stack developer eager to hone my skills at a dynamic web development company. Before I chose this career, I used to be a civil engineering student at Concordia University.
+                        After years of effort, I decided that engineering was not meant for me and enrolled in the Concordia Continuing Education Bootcamp for full-stack development.
 
                     </p>
                 </Description>
                 <Tech>
                     <p>Used Tech: </p>
+                    <Icons>
                     <DiHtml5 />
                     <DiCss3 />
                     <DiJsBadge />
@@ -30,6 +31,7 @@ const About = () => {
                     <DiGit />
                     <DiGithubBadge />
                     <DiMongodb />
+                    </Icons>
 
                 </Tech>
                 
@@ -73,6 +75,16 @@ flex-wrap: wrap;
 font-size: 1.75em;
 font-style: italic;
 justify-content: space-between;
+width: 80%;
+`
+const Icons = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+flex-wrap: wrap;
+font-size: 2em;
+font-style: italic;
+justify-content: space-around;
 width: 80%;
 `
 

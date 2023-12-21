@@ -1,32 +1,46 @@
 import styled from "styled-components";
-import pizza from "../images/ronyspizzeria.png";
-import fruit from "../images/fruitemporium.png";
+
 import ecommerce from "../images/ecommerce.png";
+import coffeehub from "../images/coffeehub.png";
 
 
 const Projects = () => {
 
     return (
         <ProjectContainer id='projects'>
-            <h3>Here is a few pojects I have worked on !</h3>
+            <h3>Projects I Have Worked On</h3>
             <Examples>
-                <Ex>
-                    E-Commerce Project
-                    <img src={ecommerce} alt="ecommerce" />
-                </Ex>
-                <Ex>
-                    Fruit Emporium
-                    <img src={fruit} alt="fruit empurium" />
-                </Ex>
-                <Ex>
-                    Rony's Pizzeria
-                    <img src={pizza} alt="Rony's pizzeria" />
-                </Ex>
-
+            <ExternalLink href="https://github.com/NicolasPapineau/CoffeeHub-Final-Project">
+                    <Ex>
+                    <strong>CoffeeHub</strong>
+                        <img src={coffeehub} alt="coffeehub" />
+                        <DeployedLink href="https://coffee-hub-final-client.vercel.app/">
+                            Link to deployed app
+                        </DeployedLink>
+                    </Ex>
+                </ExternalLink>
+                <ExternalLink href="https://github.com/NicolasPapineau/GROUP-e-commerce">
+                    <Ex>
+                        <strong>E-Commerce Project</strong>
+                        <img src={ecommerce} alt="ecommerce" />
+                        This project is not deployed
+                    </Ex>
+                </ExternalLink>
+                
             </Examples>
         </ProjectContainer>
     );
 };
+
+const ExternalLink = styled.a`
+    color: inherit;
+    text-decoration: none;
+`;
+
+const DeployedLink = styled.a`
+    color: inherit;
+`;
+
 
 const ProjectContainer = styled.div`
     padding: 0px 20px;
@@ -52,8 +66,10 @@ const Examples = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    
     img{
         max-height: 250px;
+        max-width: 80vw;
         margin: 20px;
     }
 `
@@ -61,6 +77,7 @@ const Ex = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10px;
 `
 
 export default Projects
