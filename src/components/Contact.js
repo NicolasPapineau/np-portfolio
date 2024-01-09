@@ -29,10 +29,10 @@ const Contact = () => {
 
             <SocialLinks>
                 <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon />
+                    <LinkedInIcon />
                 </a>
                 <a href={githubURL} target="_blank" rel="noopener noreferrer">
-                <GitHubIcon />
+                    <GitHubIcon />
                 </a>
             </SocialLinks>
             {/* <p>Or submit you information here:</p>

@@ -7,7 +7,7 @@ const Hero = () => {
         <HeroContainer id="home">
                 <Pic src={picture} alt="picture" />
                 <Intro>
-                    <p>Hi ! My name is Nicolas Papineau. I am currently a full-Stack web development student.</p>
+                    <p>Hi ! My name is Nicolas Papineau. I am a full-Stack web developer.</p>
                 </Intro>
                 
             
